@@ -1,6 +1,6 @@
 {
   "name": "smtp-tester-bin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "git@github.com:fallafeljan/smtp-tester-bin.git",
   "author": "jk <58153@outlook.com>",
   "bin": {
