@@ -1,0 +1,24 @@
+{
+  "name": "smtp-tester-bin",
+  "version": "0.0.0",
+  "repository": "git@github.com:fallafeljan/smtp-tester-bin.git",
+  "author": "jk <58153@outlook.com>",
+  "bin": {
+    "smtp-tester": "./bin/smtp-tester"
+  },
+  "dependencies": {
+    "argv-options": "^1.0.0",
+    "smtp-tester": "^0.6.3"
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "license": "MIT"
+}
