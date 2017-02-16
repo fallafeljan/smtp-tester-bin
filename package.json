@@ -1,6 +1,6 @@
 {
   "name": "smtp-tester-bin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git@github.com:fallafeljan/smtp-tester-bin.git",
   "author": "jk <58153@outlook.com>",
   "bin": {
@@ -19,6 +19,9 @@
   "xo": {
     "semicolon": false,
     "space": 2
+  },
+  "engines": {
+    "node": ">=7.0"
   },
   "license": "MIT"
 }
