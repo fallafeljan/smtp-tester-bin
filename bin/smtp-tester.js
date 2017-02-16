@@ -18,15 +18,14 @@ try {
   }
 } catch (err) {
   const cmd = basename(process.argv[1])
-
-  // eslint-disable-next-line no-console
   console.log(`Usage: ${cmd} [--port number]`)
 
   process.exit(1)
 }
 
 function handler(addr, id, email) {
-  // no-op
+  const emailData = JSON.stringify(email, null, 2)
+  console.log(`New message:\n${emailData}\n`)
 }
 
 const mailServer = smtpTester.init(serverPort)
@@ -35,7 +34,6 @@ console.log(`SMTP server listening at port ${serverPort}.`)
 mailServer.bind(handler)
 
 function shutdown() {
-  // eslint-disable-next-line no-console
   console.log('Shutting down...')
 
   mailServer.unbind(handler)
