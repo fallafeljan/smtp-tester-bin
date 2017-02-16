@@ -34,10 +34,13 @@ console.log(`SMTP server listening at port ${serverPort}.`)
 
 mailServer.bind(handler)
 
-process.on('SIGTERM', () => {
+function shutdown() {
   // eslint-disable-next-line no-console
   console.log('Shutting down...')
 
   mailServer.unbind(handler)
   mailServer.stop()
-})
+}
+
+['SIGTERM', 'SIGINT'].forEach(sig =>
+  process.on(sig, shutdown))
