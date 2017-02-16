@@ -3,7 +3,7 @@ const {basename} = require('path')
 const smtpTester = require('smtp-tester')
 const parseOptions = require('argv-options')
 
-let serverPort = 25
+let serverPort = 3025
 
 try {
   const parsedArgs = parseOptions(process.argv.slice(2), {
@@ -13,7 +13,9 @@ try {
     }
   })
 
-  serverPort = parsedArgs.port
+  if (parsedArgs.port) {
+    serverPort = parsedArgs.port
+  }
 } catch (err) {
   const cmd = basename(process.argv[1])
 
@@ -28,6 +30,8 @@ function handler(addr, id, email) {
 }
 
 const mailServer = smtpTester.init(serverPort)
+console.log(`SMTP server listening at port ${serverPort}.`)
+
 mailServer.bind(handler)
 
 process.on('SIGTERM', () => {

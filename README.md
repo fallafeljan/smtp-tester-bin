@@ -6,8 +6,8 @@ This is a simple wrapper for running @deitch's
 ## Usage
 
 The SMTP server is bound to `localhost` by default. You may specify the port
-(which defaults to 25) via the `--port` argument, for example:
+(which defaults to 3025) via the `--port` argument, for example:
 
 ```sh
-$ smtp-tester --port 3025
+$ smtp-tester --port 3026
 ```
