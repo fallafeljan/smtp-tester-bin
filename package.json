@@ -1,11 +1,9 @@
 {
   "name": "smtp-tester-bin",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "repository": "git@github.com:fallafeljan/smtp-tester-bin.git",
   "author": "jk <58153@outlook.com>",
-  "bin": {
-    "smtp-tester": "./bin/smtp-tester"
-  },
+  "bin": "./bin/smtp-tester.js",
   "dependencies": {
     "argv-options": "^1.0.0",
     "smtp-tester": "^0.6.3"
