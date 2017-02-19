@@ -1,6 +1,6 @@
 {
   "name": "smtp-tester-bin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cli script for the `smtp-tester` library",
   "repository": "git@github.com:fallafeljan/smtp-tester-bin.git",
   "author": "jk <58153@outlook.com>",
