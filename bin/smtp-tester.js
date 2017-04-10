@@ -5,6 +5,11 @@ const parseOptions = require('argv-options')
 
 let serverPort = 3025
 
+console.log(process.env.NODE_ENV)
+if (process.env.NODE_ENV === 'test') {
+  process.exit(0)
+}
+
 try {
   const parsedArgs = parseOptions(process.argv.slice(2), {
     p: {
