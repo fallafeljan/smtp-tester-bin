@@ -1,6 +1,6 @@
 {
   "name": "smtp-tester-bin",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "cli script for the `smtp-tester` library",
   "repository": "git@github.com:fallafeljan/smtp-tester-bin.git",
   "author": "jk <58153@outlook.com>",
@@ -20,7 +20,7 @@
     "space": 2
   },
   "engines": {
-    "node": ">=7.0"
+    "node": ">=6.10"
   },
   "license": "MIT"
 }
